@@ -13,7 +13,7 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    bandera: {
+    bandera: { 
       type: DataTypes.STRING,
       allowNull: false,
     },
