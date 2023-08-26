@@ -10,6 +10,7 @@ module.exports = (sequelize) =>{
                 type: DataTypes.INTEGER,
                 primaryKey: true,
                 autoIncrement: true,
+                allowNull: false,
               },
               nombre: {
                 type: DataTypes.STRING,
@@ -21,11 +22,12 @@ module.exports = (sequelize) =>{
               },
               duracion: {
                 type: DataTypes.INTEGER,
-        
+                allowNull: true,
               },
               temporada: {
                 type: DataTypes.STRING,
                 value: ['Verano', 'Otoño', 'Invierno', 'Primavera'],
+                allowNull: false,
               },
               
             },
