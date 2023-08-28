@@ -11,7 +11,7 @@ const getActivities = async(req,res)=>{
     }
     
 }
-
+ 
 const createActivities = async (nombre,dificultad,duracion,temporada) => {
     const activity = await Activity.create({nombre,dificultad,duracion,temporada}) 
     

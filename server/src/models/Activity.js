@@ -7,9 +7,9 @@ module.exports = (sequelize) =>{
         "activity",
         {
             id: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.UUID,
                 primaryKey: true,
-                autoIncrement: true,
+                defaultValue: DataTypes.UUIDV4,
                 allowNull: false,
               },
               nombre: {
